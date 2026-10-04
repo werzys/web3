@@ -93,11 +93,11 @@ body {
     flex-direction: column;
 }
 
-.section--links {
+.section--table {
     order: 1;
 }
 
-.section--table {
+.section--links {
     order: 2;
 }
 
