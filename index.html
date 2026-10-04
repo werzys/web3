@@ -16,9 +16,9 @@
             </div>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#links" class="nav__link">Ссылка меню 1</a></li>
-                    <li class="nav__item"><a href="#table" class="nav__link">Ссылка 2</a></li>
-                    <li class="nav__item"><a href="#form" class="nav__link">Ссылка 3</a></li>
+                    <li class="nav__item"><a href="#links" class="nav__link">Гиперссылки</a></li>
+                    <li class="nav__item"><a href="#table" class="nav__link">Таблица</a></li>
+                    <li class="nav__item"><a href="#form" class="nav__link">Форма</a></li>
                 </ul>
             </nav>
         </div>
@@ -137,7 +137,7 @@
                 <form action="http://httpbin.org/post" method="POST" class="form">
                     <div class="form__row">
                     <label for="fio" class="form__label">1. ФИО:</label>
-                    <input type="text" id="fio" name="fio" class="form__input" value="Перетолчин Данил Сергеевич" oninput="this.value = this.value.replace(/[\d]/g, '')" required>
+                    <input type="text" id="fio" name="fio" class="form__input" oninput="this.value = this.value.replace(/[\d]/g, '')" required>
                     </div>
 
                     <div class="form__row">
