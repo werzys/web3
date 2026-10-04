@@ -137,7 +137,7 @@
                 <form action="http://httpbin.org/post" method="POST" class="form">
                     <div class="form__row">
                     <label for="fio" class="form__label">1. ФИО:</label>
-                    <input type="text" id="fio" name="fio" class="form__input" oninput="this.value = this.value.replace(/[\d]/g, '')" required>
+                    <input type="text" id="fio" name="fio" class="form__input" placeholder="Иванов Иван Иванович" oninput="this.value = this.value.replace(/[\d]/g, '')" required>
                     </div>
 
                     <div class="form__row">
@@ -152,7 +152,7 @@
 
                     <div class="form__row">
                         <label for="birthday" class="form__label">4. Дата рождения:</label>
-                        <input type="date" id="birthday" name="birthday" class="form__input" required>
+                        <input type="date" id="birthday" name="birthday" class="form__input" onfocus="this.max = new Date().toISOString().split('T')[0]" required>
                     </div>
 
                     <fieldset class="form__fieldset">
@@ -205,7 +205,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer__text">(с) Сергей Синица 2023</p>
+            <p class="footer__text">(с) Перетолчин Данил</p>
         </div>
     </footer>
 
