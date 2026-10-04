@@ -14,6 +14,17 @@ body {
     min-height: 100vh;
 }
 
+.main__content {
+    display: flex;
+    flex-direction: column;
+    counter-reset: section-counter; 
+}
+
+.section__title::before {
+    counter-increment: section-counter; 
+    content: counter(section-counter) ". "; 
+}
+
 .container {
     width: 100%;
     max-width: 900px;
